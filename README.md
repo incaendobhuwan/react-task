@@ -1,7 +1,7 @@
--1.Clone project on your local. <br />
--2.Install npm (Skip this step if already installed). <br />
--3.Run npm install in root folder. <br />
--4.Run npm start. <br />
+1.Clone project on your local. <br />
+2.Install npm  and NodeJS (Skip this step if already installed). <br />
+3.Run <b> npm install </b> in root folder. <br />
+4.Run <b> npm start. </b> <br />
 
 
 
