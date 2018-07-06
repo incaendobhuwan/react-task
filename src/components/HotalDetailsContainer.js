@@ -26,7 +26,7 @@ export default class HotalDetailsContainer extends React.Component {
       if(this.state.hotalDetails[i].name == label){
         this.state.hotalDetails[i].value += type;
         if(type == -1 && this.state.hotalDetails[0].value * 4 < this.state.hotalDetails[1].value + this.state.hotalDetails[2].value){
-          this.state.hotalDetails[2].value =  Math.max(0, this.state.hotalDetails[2].value - 4)
+          this.state.hotalDetails[2].value =  Math.max(0,this.state.hotalDetails[2].value - (this.state.hotalDetails[1].value + this.state.hotalDetails[2].value - this.state.hotalDetails[0].value*4) )
           this.state.hotalDetails[1].value =  Math.min(this.state.hotalDetails[i].value * 4 ,this.state.hotalDetails[1].value)
         }
         if(type == 1){
